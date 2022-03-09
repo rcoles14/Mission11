@@ -2,48 +2,52 @@
 @page "/admin"
 @inherits OwningComponentBase<iBookRepository>
 
-<table class="table table-sm table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>BookID</th>
-            <th>IBSN</th>
-            <th>Title</th>
-            <th>Author</th>
-        </tr>
-    </thead>
-    <tbody>
-                    @if (BookData?.Count() > 0)
-                        {
-                            @foreach (Book b in BookData)
-                            {
-        <tr>
-            <td>@b.BookId</td>
-            <td>@b.Isbn</td>
-            <td>@b.Title</td>
-            <td>@b.Author</td>
-
-            <td>
-                <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
-                <NavLink class="btn btn-warning btn-sm" href="@GetEditUrl(b.BookId)">Edit</NavLink>
-                <button class="btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
-            </td>
-
-        </tr>
-                }
-            }
-        else
-            {
+<div class="container-fluid overflow-scroll" style="height: 500px">
+    @*<div class="overflow-auto">*@
+        <table class="table table-sm table-bordered table-hover">
+            <thead>
                 <tr>
-                    <td colspan="5" class="text-center">No Books</td>
+                    <th>BookID</th>
+                    <th>IBSN</th>
+                    <th>Title</th>
+                    <th>Author</th>
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @if (BookData?.Count() > 0)
+                {
+                    @foreach (Book b in BookData)
+                    {
+                        <tr>
+                            <td>@b.BookId</td>
+                            <td>@b.Isbn</td>
+                            <td>@b.Title</td>
+                            <td>@b.Author</td>
 
-    </tbody>
+                            <td>
+                                <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
+                                <NavLink class="btn btn-warning btn-sm" href="@GetEditUrl(b.BookId)">Edit</NavLink>
+                                <button class="btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
+                            </td>
+
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No Books</td>
+                    </tr>
+                }
+
+            </tbody>
 
 
 
-</table>
-<NavLink class="btn btn-primary" href="/admin/books/create">Create</NavLink>
+        </table>
+    @*</div>*@
+</div>
+<NavLink class="btn btn-primary btn" href="/admin/books/create">Create</NavLink>
 
 @code {
     public iBookRepository repo => Service;
