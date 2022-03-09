@@ -1198,11 +1198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coles\\Desktop\\is403\\Mission7\\Mission7\\Mission7.csproj",
+      "projectUniqueName": "C:\\Users\\coles\\Desktop\\is403\\mission9\\Mission7\\Mission7.csproj",
       "projectName": "Mission7",
-      "projectPath": "C:\\Users\\coles\\Desktop\\is403\\Mission7\\Mission7\\Mission7.csproj",
+      "projectPath": "C:\\Users\\coles\\Desktop\\is403\\mission9\\Mission7\\Mission7.csproj",
       "packagesPath": "C:\\Users\\coles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\coles\\Desktop\\is403\\Mission7\\Mission7\\obj\\",
+      "outputPath": "C:\\Users\\coles\\Desktop\\is403\\mission9\\Mission7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\coles\\AppData\\Roaming\\NuGet\\NuGet.Config",
