@@ -9,6 +9,6 @@
     "\\Mission7\\Views\\Shared\\Components",
     "\\Mission7\\Views\\Shared\\Components\\Category"
   ],
-  "SelectedNode": "\\Mission7\\Startup.cs",
+  "SelectedNode": "\\Mission7\\Pages\\Admin\\Purchases.razor",
   "PreviewInSolutionExplorer": false
 }

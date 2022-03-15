@@ -76,7 +76,7 @@ using Mission7.Models;
     {
         book = repo.Books.FirstOrDefault(x => x.BookId == Id);
     }
-    public string EditUrl => $"/admin/books/edit{book.BookId}";
+    public string EditUrl => $"/admin/books/edit/{book.BookId}";
 
 
 #line default
