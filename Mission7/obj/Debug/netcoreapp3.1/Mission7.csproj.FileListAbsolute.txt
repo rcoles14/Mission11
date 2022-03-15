@@ -267,3 +267,9 @@ C:\Users\coles\Desktop\is403\mission9\Mission7\obj\Debug\netcoreapp3.1\Mission7.
 C:\Users\coles\Desktop\is403\mission9\Mission7\obj\Debug\netcoreapp3.1\Mission7.pdb
 C:\Users\coles\Desktop\is403\mission9\Mission7\obj\Debug\netcoreapp3.1\Mission7.genruntimeconfig.cache
 C:\Users\coles\Desktop\is403\mission9\Mission7\obj\Debug\netcoreapp3.1\Mission7.csproj.AssemblyReference.cache
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\coles\Desktop\is403\mission9\Mission7\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

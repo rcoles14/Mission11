@@ -63,7 +63,7 @@ using Mission7.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 50 "C:\Users\coles\Desktop\is403\mission9\Mission7\Pages\Admin\Books.razor"
+#line 52 "C:\Users\coles\Desktop\is403\mission9\Mission7\Pages\Admin\Books.razor"
        
     public iBookRepository repo => Service;
     public IEnumerable<Book> BookData { get; set; }

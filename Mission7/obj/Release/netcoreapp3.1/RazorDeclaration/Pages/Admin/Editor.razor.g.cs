@@ -53,13 +53,58 @@ using Mission7.Models;
 #line default
 #line hidden
 #nullable disable
-    public partial class Editor : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/books/edit/{id:long}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/books/create")]
+    public partial class Editor : OwningComponentBase<iBookRepository>
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 74 "C:\Users\coles\Desktop\is403\mission9\Mission7\Pages\Admin\Editor.razor"
+       
+
+
+    [Parameter]
+    public long Id { get; set; } = 0;
+
+    public string ThemeColor => Id == 0 ? "primary" : "warning";
+    public string TitleText => Id == 0 ? "Create" : "Edit";
+
+    public Book b { get; set; } = new Book();
+
+    public iBookRepository repo => Service;
+
+    protected override void OnParametersSet()
+    {
+        if (Id != 0)
+        {
+            b = repo.Books.FirstOrDefault(x => x.BookId == Id);
+        }
+    }
+
+    public void SaveBook()
+    {
+        if (Id == 0)
+        {
+            repo.CreateBook(b);
+        }
+        else
+        {
+            repo.SaveBook(b);
+        }
+        NavManager.NavigateTo("/admin", true);
+
+    }
+    [Inject]
+    public NavigationManager NavManager { get; set; }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
