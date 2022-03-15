@@ -273,3 +273,5 @@ C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft
 C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\coles\Desktop\is403\mission9\Mission7\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Bookstore.sqlite
+C:\Users\coles\Desktop\is403\mission9\Mission7\bin\Debug\netcoreapp3.1\Identity.sqlite
